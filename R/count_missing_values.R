@@ -1,6 +1,5 @@
 ## Function and Documentation
 
-```{r}
 #' Count missing values for all columns by group
 #'
 #' @description Given a data frame `data` and a
@@ -50,4 +49,6 @@ count_all_missing_by_group <- function(data, group_col, .groups = "drop") {
     summarize(across(everything(), ~sum(is.na(.x))),
               .groups = .groups)
 }
-```
+
+
+
