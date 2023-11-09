@@ -2,9 +2,15 @@ Package: prebaked
 Title: What the Package Does (One Line, Title Case)
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+    person("Grace", "Melchers", , "gracem014@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
+Description: This package was designed as part of Assignment B2 for STAT 545B. It is 
+designed to be a wrapper around the `group_by()` and `summarize()` functions in the 
+`dplyr` package. Given a data frame `data` and a column `group`, 
+`count_all_missing_by_group()` creates a new data frame with one row per level of 
+`group`. The first column of the output data frame contains the levels of `group`, 
+and the rest of the columns contain the number of missing values for all columns in 
+`data` except `group`.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
