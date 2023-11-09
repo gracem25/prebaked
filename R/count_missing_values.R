@@ -22,6 +22,10 @@
 #' `"keep"` to keep the output data frame grouped by
 #' `group`. See `summarize()` documentation in
 #' `dplyr` for a full list of options.
+#'@importFrom tidyselect everything
+#'@importFrom dplyr summarize
+#'@importFrom dplyr group_by
+#'@importFrom dplyr across
 #'
 #' @return A data frame or tibble with the
 #' levels of `group`, and the  number of NAs within
@@ -46,7 +50,7 @@ count_all_missing_by_group <- function(data, group_col, .groups = "drop") {
   }
 
   data |> dplyr::group_by({{ group_col }}) |>
-    dplyr::summarize(dplyr::across(everything(), ~sum(is.na(.x))),
+    dplyr::summarize(dplyr::across(tidyselect::everything(), ~sum(is.na(.x))),
               .groups = .groups)
 }
 
