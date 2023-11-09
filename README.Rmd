@@ -25,7 +25,7 @@ The goal of the prebaked package is to provide a function called count_all_missi
 You can install the development version of prebaked like so:
 
 ``` r
-install_github("gracem25/prebaked", ref = "0.1.0")
+install_github("gracem25/prebaked", ref = "v0.1.0")
 ```
 
 ## Usage

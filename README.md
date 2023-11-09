@@ -18,7 +18,7 @@ packages, so make sure to call them before you try to run this package.
 You can install the development version of prebaked like so:
 
 ``` r
-install_github("gracem25/prebaked", ref = "0.1.0")
+install_github("gracem25/prebaked", ref = "v0.1.0")
 ```
 
 ## Usage
@@ -42,6 +42,35 @@ library(tidyverse)
 #> ℹ Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
 library(tidyselect)
 library(prebaked)
+#> Loading required package: devtools
+#> Loading required package: usethis
+#> Loading required package: testthat
+#> 
+#> Attaching package: 'testthat'
+#> 
+#> The following object is masked from 'package:devtools':
+#> 
+#>     test_file
+#> 
+#> The following object is masked from 'package:tidyselect':
+#> 
+#>     matches
+#> 
+#> The following object is masked from 'package:dplyr':
+#> 
+#>     matches
+#> 
+#> The following object is masked from 'package:purrr':
+#> 
+#>     is_null
+#> 
+#> The following objects are masked from 'package:readr':
+#> 
+#>     edition_get, local_edition
+#> 
+#> The following object is masked from 'package:tidyr':
+#> 
+#>     matches
 
 count_all_missing_by_group(airquality, Month)
 #> # A tibble: 5 × 6
