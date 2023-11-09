@@ -1,6 +1,6 @@
 Package: prebaked
-Title: What the Package Does (One Line, Title Case)
-Version: 0.0.0.9000
+Title: A package to count missing values for all columns by group
+Version: 0.1.0
 Authors@R: 
     person("Grace", "Melchers", , "gracem014@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
